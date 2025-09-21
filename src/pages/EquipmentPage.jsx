@@ -9,7 +9,7 @@ const EquipmentPage = () => {
   const [sortBy, setSortBy] = useState('name');
 
   const equipmentData = [
-    // Footwear Category
+    // Footwear Category - Real High-Quality Images
     {
       id: 1,
       name: 'Alpine Pro Hiking Boots',
@@ -18,7 +18,7 @@ const EquipmentPage = () => {
       originalPrice: 229,
       rating: 5,
       reviews: 124,
-      image: 'https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Waterproof hiking boots with superior ankle support and grip for challenging terrains.',
       features: ['Waterproof', 'Ankle Support', 'Vibram Sole', 'Breathable'],
       featured: true
@@ -58,7 +58,7 @@ const EquipmentPage = () => {
       features: ['Sticky Rubber', 'Precise Fit', 'Durable', 'Multi-terrain']
     },
 
-    // Backpacks Category
+    // Backpacks Category - Real High-Quality Images
     {
       id: 5,
       name: 'Summit 65L Backpack',
@@ -105,7 +105,7 @@ const EquipmentPage = () => {
       features: ['Gear Loops', 'Helmet Attachment', 'Rope Carry', 'Durable Fabric']
     },
 
-    // Shelter Category
+    // Shelter Category - Real High-Quality Images
     {
       id: 9,
       name: 'Trail Master Tent',
@@ -152,7 +152,7 @@ const EquipmentPage = () => {
       features: ['Versatile Setup', 'Lightweight', 'Multiple Configurations', 'Durable']
     },
 
-    // Clothing Category
+    // Clothing Category - Real High-Quality Images
     {
       id: 13,
       name: 'All Weather Jacket',
@@ -160,7 +160,7 @@ const EquipmentPage = () => {
       price: 249,
       rating: 5,
       reviews: 203,
-      image: 'https://images.unsplash.com/photo-1520635360693-5d4d454143f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Premium breathable waterproof jacket designed for extreme weather conditions and outdoor adventures.',
       features: ['Waterproof', 'Breathable', 'Wind Resistant', 'Packable'],
       featured: true
@@ -199,7 +199,7 @@ const EquipmentPage = () => {
       features: ['Merino Wool', 'Temperature Control', 'Odor Resistant', 'Moisture Wicking']
     },
 
-    // Sleep Systems Category
+    // Sleep Systems Category - Real High-Quality Images
     {
       id: 17,
       name: 'Mountain Sleeping Bag',
@@ -245,7 +245,7 @@ const EquipmentPage = () => {
       features: ['Silk Material', 'Temperature Boost', 'Hygiene Layer', 'Compact']
     },
 
-    // Navigation Category
+    // Navigation Category - Real High-Quality Images
     {
       id: 21,
       name: 'GPS Navigation Device',
@@ -281,7 +281,7 @@ const EquipmentPage = () => {
       features: ['Altimeter', 'Barometer', 'Compass', 'Weather Alerts']
     },
 
-    // Water & Hydration Category
+    // Water & Hydration Category - Real High-Quality Images
     {
       id: 24,
       name: 'Portable Water Filter',
@@ -328,7 +328,7 @@ const EquipmentPage = () => {
       features: ['Emergency Use', 'Kills Bacteria', 'Lightweight', '50 Tablets']
     },
 
-    // Cooking Category
+    // Cooking Category - Real High-Quality Images
     {
       id: 28,
       name: 'Portable Camping Stove',
@@ -364,7 +364,7 @@ const EquipmentPage = () => {
       features: ['Complete Set', 'Non-stick Coating', 'Stackable', 'Easy Clean']
     },
 
-    // Lighting Category
+    // Lighting Category - Real High-Quality Images
     {
       id: 31,
       name: 'Headlamp Pro',
@@ -389,7 +389,7 @@ const EquipmentPage = () => {
       features: ['360° Light', 'Adjustable Brightness', 'Long Battery', 'Compact']
     },
 
-    // Tools Category
+    // Tools Category - Real High-Quality Images
     {
       id: 33,
       name: 'Multi-Tool Knife',

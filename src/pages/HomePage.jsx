@@ -77,14 +77,14 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Featured Products */}
+      {/* Featured Products - Updated with User-Specified Images */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-white text-center mb-12">Featured Equipment</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div className="bg-gray-800 rounded-lg overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                 alt="Hiking Boots"
                 className="w-full h-48 object-cover"
               />
