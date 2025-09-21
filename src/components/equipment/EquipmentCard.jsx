@@ -8,6 +8,7 @@ const EquipmentCard = ({ equipment }) => {
 
   const handleImageError = () => {
     setImageError(true);
+    setImageLoaded(true); // Consider it loaded even if there's an error
   };
 
   const handleImageLoad = () => {
@@ -18,12 +19,13 @@ const EquipmentCard = ({ equipment }) => {
     addToCart(equipment);
   };
 
+  // Fallback image for any errors
   const fallbackImage = `data:image/svg+xml;base64,${btoa(`
     <svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
       <rect width="400" height="300" fill="#374151"/>
-      <text x="200" y="150" text-anchor="middle" fill="#9CA3AF" font-size="16" font-family="Arial">
-        ${equipment.name}
-      </text>
+      <rect x="150" y="120" width="100" height="60" rx="10" fill="#4A5568"/>
+      <text x="200" y="155" text-anchor="middle" fill="#E2E8F0" font-size="16" font-family="Arial">${equipment.name}</text>
+      <text x="200" y="175" text-anchor="middle" fill="#9CA3AF" font-size="12" font-family="Arial">${equipment.category}</text>
     </svg>
   `)}`;
 
@@ -31,7 +33,7 @@ const EquipmentCard = ({ equipment }) => {
     <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 group">
       {/* Image Container */}
       <div className="relative h-48 bg-gray-700 overflow-hidden">
-        {!imageLoaded && !imageError && (
+        {!imageLoaded && (
           <div className="absolute inset-0 bg-gray-700 animate-pulse flex items-center justify-center">
             <div className="text-gray-400">Loading...</div>
           </div>
