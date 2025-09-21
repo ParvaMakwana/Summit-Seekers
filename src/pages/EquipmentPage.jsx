@@ -3,7 +3,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import EquipmentCard from '../components/equipment/EquipmentCard';
 import EquipmentFilter from '../components/equipment/EquipmentFilter';
-import { getEquipmentImage, getHeroImage } from '../utils/imageUtils';
 
 const EquipmentPage = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -19,7 +18,7 @@ const EquipmentPage = () => {
       originalPrice: 229,
       rating: 5,
       reviews: 124,
-      image: getEquipmentImage('Footwear', 'Alpine Pro Hiking Boots'),
+      image: 'https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Waterproof hiking boots with superior ankle support and grip for challenging terrains.',
       features: ['Waterproof', 'Ankle Support', 'Vibram Sole', 'Breathable'],
       featured: true
@@ -31,7 +30,7 @@ const EquipmentPage = () => {
       price: 129,
       rating: 4,
       reviews: 89,
-      image: getEquipmentImage('Footwear', 'Trail Running Shoes'),
+      image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Lightweight trail running shoes with aggressive tread pattern for technical terrain.',
       features: ['Lightweight', 'Aggressive Tread', 'Quick Dry', 'Rock Protection']
     },
@@ -42,7 +41,7 @@ const EquipmentPage = () => {
       price: 349,
       rating: 5,
       reviews: 67,
-      image: getEquipmentImage('Footwear', 'Mountaineering Boots'),
+      image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Heavy-duty mountaineering boots designed for extreme cold and technical climbing.',
       features: ['Insulated', 'Crampon Compatible', 'Waterproof', 'High Altitude'],
       featured: true
@@ -54,7 +53,7 @@ const EquipmentPage = () => {
       price: 159,
       rating: 4,
       reviews: 156,
-      image: getEquipmentImage('Footwear', 'Approach Shoes'),
+      image: 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Versatile approach shoes perfect for scrambling and light climbing approaches.',
       features: ['Sticky Rubber', 'Precise Fit', 'Durable', 'Multi-terrain']
     },
@@ -67,7 +66,7 @@ const EquipmentPage = () => {
       price: 159,
       rating: 4,
       reviews: 89,
-      image: getEquipmentImage('Backpacks', 'Summit 65L Backpack'),
+      image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Large capacity backpack with multiple compartments and ergonomic design for long hikes.',
       features: ['65L Capacity', 'Rain Cover', 'Hydration Compatible', 'Adjustable Straps']
     },
@@ -78,7 +77,7 @@ const EquipmentPage = () => {
       price: 89,
       rating: 5,
       reviews: 203,
-      image: getEquipmentImage('Backpacks', 'Day Pack 30L'),
+      image: 'https://images.unsplash.com/photo-1622260614153-03223fb72052?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Compact day pack perfect for short hikes and daily adventures.',
       features: ['30L Capacity', 'Laptop Sleeve', 'Side Pockets', 'Lightweight']
     },
@@ -89,7 +88,7 @@ const EquipmentPage = () => {
       price: 199,
       rating: 4,
       reviews: 91,
-      image: getEquipmentImage('Backpacks', 'Ultralight 45L Pack'),
+      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Ultralight backpack for minimalist backpacking and thru-hiking adventures.',
       features: ['Ultralight Design', 'Frameless', 'Roll-top Closure', 'Water Resistant'],
       featured: true
@@ -101,7 +100,7 @@ const EquipmentPage = () => {
       price: 249,
       rating: 5,
       reviews: 78,
-      image: getEquipmentImage('Backpacks', 'Technical Climbing Pack'),
+      image: 'https://images.unsplash.com/photo-1551524164-6cf2ac531fb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Specialized climbing pack with gear loops and streamlined design.',
       features: ['Gear Loops', 'Helmet Attachment', 'Rope Carry', 'Durable Fabric']
     },
@@ -114,7 +113,7 @@ const EquipmentPage = () => {
       price: 299,
       rating: 5,
       reviews: 67,
-      image: getEquipmentImage('Shelter', 'Trail Master Tent'),
+      image: 'https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: '3-season ultralight tent with easy setup and excellent weather protection.',
       features: ['Ultralight', '3-Season', 'Easy Setup', 'Weather Resistant'],
       featured: true
@@ -126,7 +125,7 @@ const EquipmentPage = () => {
       price: 549,
       rating: 5,
       reviews: 134,
-      image: getEquipmentImage('Shelter', 'Expedition 4-Season Tent'),
+      image: 'https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Heavy-duty 4-season tent designed for extreme weather conditions.',
       features: ['4-Season', 'Wind Resistant', 'Snow Load', 'Expedition Grade']
     },
@@ -137,7 +136,7 @@ const EquipmentPage = () => {
       price: 179,
       rating: 4,
       reviews: 267,
-      image: getEquipmentImage('Shelter', 'Ultralight Bivy'),
+      image: 'https://images.unsplash.com/photo-1487730116645-74489c95b41b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Minimalist bivy sack for solo adventures and emergency shelter.',
       features: ['Solo Shelter', 'Waterproof', 'Compact', 'Emergency Use']
     },
@@ -148,7 +147,7 @@ const EquipmentPage = () => {
       price: 89,
       rating: 4,
       reviews: 189,
-      image: getEquipmentImage('Shelter', 'Tarp Shelter'),
+      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Versatile tarp shelter for customizable protection in various conditions.',
       features: ['Versatile Setup', 'Lightweight', 'Multiple Configurations', 'Durable']
     },
@@ -161,7 +160,7 @@ const EquipmentPage = () => {
       price: 249,
       rating: 5,
       reviews: 203,
-      image: getEquipmentImage('Clothing', 'All Weather Jacket'),
+      image: 'https://images.unsplash.com/photo-1520635360693-5d4d454143f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Premium breathable waterproof jacket designed for extreme weather conditions and outdoor adventures.',
       features: ['Waterproof', 'Breathable', 'Wind Resistant', 'Packable'],
       featured: true
@@ -173,7 +172,7 @@ const EquipmentPage = () => {
       price: 199,
       rating: 5,
       reviews: 312,
-      image: getEquipmentImage('Clothing', 'Insulated Down Jacket'),
+      image: 'https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Lightweight down jacket with excellent warmth-to-weight ratio.',
       features: ['Down Insulation', 'Packable', 'Water Resistant', 'Lightweight']
     },
@@ -184,7 +183,7 @@ const EquipmentPage = () => {
       price: 89,
       rating: 4,
       reviews: 98,
-      image: getEquipmentImage('Clothing', 'Hiking Pants'),
+      image: 'https://images.unsplash.com/photo-1506629905607-d9f49b8f3b8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Durable hiking pants with stretch fabric and reinforced knees.',
       features: ['Stretch Fabric', 'Reinforced Knees', 'Quick Dry', 'Multiple Pockets']
     },
@@ -195,7 +194,7 @@ const EquipmentPage = () => {
       price: 79,
       rating: 4,
       reviews: 156,
-      image: getEquipmentImage('Clothing', 'Base Layer Set'),
+      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Merino wool base layer set for temperature regulation and comfort.',
       features: ['Merino Wool', 'Temperature Control', 'Odor Resistant', 'Moisture Wicking']
     },
@@ -208,7 +207,7 @@ const EquipmentPage = () => {
       price: 179,
       rating: 4,
       reviews: 91,
-      image: getEquipmentImage('Sleep Systems', 'Mountain Sleeping Bag'),
+      image: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Down-filled sleeping bag rated for temperatures down to 20°F.',
       features: ['Down Fill', '20°F Rating', 'Compression Sack', 'Mummy Style']
     },
@@ -219,7 +218,7 @@ const EquipmentPage = () => {
       price: 129,
       rating: 5,
       reviews: 234,
-      image: getEquipmentImage('Sleep Systems', 'Ultralight Sleeping Pad'),
+      image: 'https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Inflatable sleeping pad with high R-value for insulation and comfort.',
       features: ['High R-Value', 'Ultralight', 'Compact', 'Insulated']
     },
@@ -230,7 +229,7 @@ const EquipmentPage = () => {
       price: 35,
       rating: 4,
       reviews: 187,
-      image: getEquipmentImage('Sleep Systems', 'Camping Pillow'),
+      image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Inflatable camping pillow for comfortable sleep in the outdoors.',
       features: ['Inflatable', 'Compact', 'Soft Surface', 'Lightweight']
     },
@@ -241,7 +240,7 @@ const EquipmentPage = () => {
       price: 45,
       rating: 4,
       reviews: 143,
-      image: getEquipmentImage('Sleep Systems', 'Sleeping Bag Liner'),
+      image: 'https://images.unsplash.com/photo-1487730116645-74489c95b41b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Silk sleeping bag liner for added warmth and hygiene.',
       features: ['Silk Material', 'Temperature Boost', 'Hygiene Layer', 'Compact']
     },
@@ -254,7 +253,7 @@ const EquipmentPage = () => {
       price: 199,
       rating: 4,
       reviews: 78,
-      image: getEquipmentImage('Navigation', 'GPS Navigation Device'),
+      image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Rugged GPS device with preloaded topographic maps and long battery life.',
       features: ['Preloaded Maps', 'Long Battery', 'Waterproof', 'SOS Feature']
     },
@@ -265,7 +264,7 @@ const EquipmentPage = () => {
       price: 49,
       rating: 5,
       reviews: 267,
-      image: getEquipmentImage('Navigation', 'Compass and Map Set'),
+      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Professional orienteering compass with detailed topographic maps for precise navigation.',
       features: ['Professional Grade', 'Declination Adjustment', 'Topographic Maps', 'Durable Construction'],
       featured: true
@@ -277,7 +276,7 @@ const EquipmentPage = () => {
       price: 299,
       rating: 4,
       reviews: 156,
-      image: getEquipmentImage('Navigation', 'Altimeter Watch'),
+      image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Multi-function watch with altimeter, barometer, and compass.',
       features: ['Altimeter', 'Barometer', 'Compass', 'Weather Alerts']
     },
@@ -290,7 +289,7 @@ const EquipmentPage = () => {
       price: 79,
       rating: 5,
       reviews: 134,
-      image: getEquipmentImage('Water & Hydration', 'Portable Water Filter'),
+      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Lightweight water filter that removes 99.9% of bacteria and parasites.',
       features: ['99.9% Filtration', 'Lightweight', 'Fast Flow', '1000L Capacity']
     },
@@ -301,7 +300,7 @@ const EquipmentPage = () => {
       price: 35,
       rating: 4,
       reviews: 312,
-      image: getEquipmentImage('Water & Hydration', 'Insulated Water Bottle'),
+      image: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Double-wall insulated bottle that keeps drinks cold for 24 hours or hot for 12 hours.',
       features: ['Double Insulated', '24hr Cold', '12hr Hot', 'BPA Free']
     },
@@ -312,7 +311,7 @@ const EquipmentPage = () => {
       price: 59,
       rating: 4,
       reviews: 189,
-      image: getEquipmentImage('Water & Hydration', 'Hydration Bladder 3L'),
+      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Large capacity 3-liter hydration bladder with quick-disconnect tube and leak-proof design.',
       features: ['3L Capacity', 'Quick Disconnect', 'Easy Fill', 'Leak Proof'],
       featured: true
@@ -324,7 +323,7 @@ const EquipmentPage = () => {
       price: 15,
       rating: 4,
       reviews: 98,
-      image: getEquipmentImage('Water & Hydration', 'Water Purification Tablets'),
+      image: 'https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Emergency water purification tablets for safe drinking water anywhere.',
       features: ['Emergency Use', 'Kills Bacteria', 'Lightweight', '50 Tablets']
     },
@@ -337,7 +336,7 @@ const EquipmentPage = () => {
       price: 125,
       rating: 4,
       reviews: 98,
-      image: getEquipmentImage('Cooking', 'Portable Camping Stove'),
+      image: 'https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Compact gas stove with wind-resistant design and piezo ignition.',
       features: ['Wind Resistant', 'Piezo Ignition', 'Compact', 'Fuel Efficient']
     },
@@ -348,7 +347,7 @@ const EquipmentPage = () => {
       price: 89,
       rating: 5,
       reviews: 156,
-      image: getEquipmentImage('Cooking', 'Titanium Cookset'),
+      image: 'https://images.unsplash.com/photo-1504851149312-7a075b496cc7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Premium ultralight titanium cookset for minimalist camping and backpacking adventures.',
       features: ['Titanium Construction', 'Ultralight', 'Nesting Design', 'Corrosion Resistant'],
       featured: true
@@ -360,7 +359,7 @@ const EquipmentPage = () => {
       price: 65,
       rating: 4,
       reviews: 234,
-      image: getEquipmentImage('Cooking', 'Camping Cookware Set'),
+      image: 'https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Complete cookware set with pots, pans, and utensils for camp cooking.',
       features: ['Complete Set', 'Non-stick Coating', 'Stackable', 'Easy Clean']
     },
@@ -373,7 +372,7 @@ const EquipmentPage = () => {
       price: 69,
       rating: 5,
       reviews: 189,
-      image: getEquipmentImage('Lighting', 'Headlamp Pro'),
+      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'High-performance LED headlamp with multiple brightness settings, red light mode, and rechargeable battery.',
       features: ['LED Light', 'Multiple Modes', 'Rechargeable', 'Water Resistant'],
       featured: true
@@ -385,7 +384,7 @@ const EquipmentPage = () => {
       price: 45,
       rating: 4,
       reviews: 267,
-      image: getEquipmentImage('Lighting', 'Lantern LED'),
+      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Bright LED lantern with adjustable brightness for camp lighting.',
       features: ['360° Light', 'Adjustable Brightness', 'Long Battery', 'Compact']
     },
@@ -398,7 +397,7 @@ const EquipmentPage = () => {
       price: 45,
       rating: 4,
       reviews: 267,
-      image: getEquipmentImage('Tools', 'Multi-Tool Knife'),
+      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Versatile multi-tool with knife, pliers, scissors, and 12 other essential outdoor functions.',
       features: ['15 Functions', 'Stainless Steel', 'Compact Design', 'Belt Clip'],
       featured: true
@@ -411,7 +410,7 @@ const EquipmentPage = () => {
       originalPrice: 119,
       rating: 4,
       reviews: 156,
-      image: getEquipmentImage('Accessories', 'Carbon Fiber Trekking Poles'),
+      image: 'https://images.unsplash.com/photo-1551524164-6cf2ac531fb4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Lightweight carbon fiber poles with shock absorption and adjustable height.',
       features: ['Carbon Fiber', 'Shock Absorption', 'Adjustable', 'Lightweight']
     },
@@ -422,7 +421,7 @@ const EquipmentPage = () => {
       price: 79,
       rating: 5,
       reviews: 143,
-      image: getEquipmentImage('Accessories', 'Climbing Harness'),
+      image: 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       description: 'Comfortable climbing harness with gear loops and belay loop.',
       features: ['Gear Loops', 'Adjustable', 'Comfortable', 'Safety Certified']
     }
@@ -450,12 +449,12 @@ const EquipmentPage = () => {
     <div className="min-h-screen bg-gray-900">
       <Navbar />
       
-      {/* Hero Section */}
+      {/* Hero Section - Restored Original Beautiful Background */}
       <section className="relative h-96 flex items-center justify-center">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('${getHeroImage('equipment')}')`
+            backgroundImage: 'url(https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80)'
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-60"></div>

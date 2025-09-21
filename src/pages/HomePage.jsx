@@ -2,19 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { getEquipmentImage, getHeroImage } from '../utils/imageUtils';
 
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-gray-900">
       <Navbar />
       
-      {/* Hero Section */}
+      {/* Hero Section - Restored Original Beautiful Background */}
       <section className="relative h-screen flex items-center justify-center">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url('${getHeroImage('mountain')}')`
+            backgroundImage: 'url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80)'
           }}
         >
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -85,7 +84,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             <div className="bg-gray-800 rounded-lg overflow-hidden">
               <img
-                src={getEquipmentImage('Footwear', 'Alpine Pro Hiking Boots')}
+                src="https://images.unsplash.com/photo-1544966503-7cc5ac882d5f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                 alt="Hiking Boots"
                 className="w-full h-48 object-cover"
               />
@@ -100,7 +99,7 @@ const HomePage = () => {
             </div>
             <div className="bg-gray-800 rounded-lg overflow-hidden">
               <img
-                src={getEquipmentImage('Backpacks', 'Ultralight 45L Pack')}
+                src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                 alt="Backpack"
                 className="w-full h-48 object-cover"
               />
@@ -115,7 +114,7 @@ const HomePage = () => {
             </div>
             <div className="bg-gray-800 rounded-lg overflow-hidden">
               <img
-                src={getEquipmentImage('Shelter', 'Trail Master Tent')}
+                src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                 alt="Tent"
                 className="w-full h-48 object-cover"
               />
